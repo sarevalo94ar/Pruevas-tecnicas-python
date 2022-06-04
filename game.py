@@ -3,14 +3,14 @@ import time
 print("_____________Juego__________")
 
 
-def piedra_tijera_papel():
-    opciones = {'piedra': 'tijera', 'tijera': 'papel', 'papel': 'piedra'}
-    jugador = input("escribe piedra papel o tijera :")
-    while jugador not in {'piedra', 'tijera', 'papel'}:
+def piedra_papel_papel():
+    opciones = {'piedra': 'papel', 'papel': 'papel', 'papel': 'piedra'}
+    jugador = input("escribe piedra papel o papel :")
+    while jugador not in {'piedra', 'papel', 'papel'}:
         print("opcion no valida")
-        jugador = input("escribe piedra papel o tijera:")
-    
-    maquina = np.random.choice(['piedra', 'papel', 'tijera'])
+        jugador = input("escribe piedra papel o papel:")
+
+    maquina = np.random.choice(['piedra', 'papel', 'papel'])
     time.sleep(.4)
     print("\n Has selecionado :", jugador)
     print("La computadora ha selecionado", maquina)
@@ -23,4 +23,4 @@ def piedra_tijera_papel():
         print("empate")
 
 
-piedra_tijera_papel()
+piedra_papel_papel()
