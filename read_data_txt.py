@@ -4,7 +4,6 @@ numberDataOne = 0
 numberDataTwo = 0
 lDataOne = [] 
 lDataTwo = []
-#print(aDataOne)
 f = open("data.txt", "r")
 while(True):
     line = f.readline()
